@@ -17,6 +17,7 @@
 - [x] Day 3: Agency Panel (all 8 tasks complete)
 - [x] Day 4: Guide Panel (all 7 tasks complete)
 - [x] Day 5: Notifications & Polish (all 7 tasks complete)
+- [x] PWA setup (manifest, SW, offline page, icons, wired all pages)
 
 ## Working Memory
 ### Active Context
@@ -66,7 +67,8 @@
 
 ### Where We Left Off
 - 5-day sprint COMPLETE. All 37 tasks done across 5 days.
-- Post-sprint: Landing page, advanced charts, chat, payment gateway, AI matching
+- PWA setup complete (manifest, service worker, offline page, icons, wired to all Filament panels + standalone pages)
+- Post-sprint: Landing page, chat, payment gateway, AI matching
 
 ### Key Context for Next Session
 - Login: `admin@tourbase.com` / `agency@tourbase.com` / `guide@tourbase.com` — all pw: `password`
