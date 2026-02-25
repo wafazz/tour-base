@@ -2,6 +2,7 @@
 
 namespace App\Providers\Filament;
 
+use App\Models\Setting;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
@@ -27,7 +28,8 @@ class GuidePanelProvider extends PanelProvider
             ->path('guide')
             ->login()
             ->registration(GuideRegister::class)
-            ->brandName('Tour Base Guide')
+            ->brandName(Setting::get('site_name', 'Tour Base') . ' Guide')
+            ->brandLogo(Setting::get('logo') ? asset('storage/' . Setting::get('logo')) : null)
             ->colors([
                 'primary' => Color::Amber,
                 'danger' => Color::Red,

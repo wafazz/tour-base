@@ -6,6 +6,7 @@ use App\Models\AgencyProfile;
 use App\Models\Application;
 use App\Models\GuideProfile;
 use App\Models\Invoice;
+use App\Models\Setting;
 use App\Models\TourJob;
 use App\Models\User;
 use Illuminate\Database\Seeder;
@@ -14,6 +15,11 @@ class DatabaseSeeder extends Seeder
 {
     public function run(): void
     {
+        // Default Settings
+        Setting::set('site_name', 'Tour Base');
+        Setting::set('site_tagline', 'Digital Job Matching Platform for Tour Guides');
+        Setting::set('contact_email', 'info@tourbase.com');
+
         // Admin
         User::factory()->admin()->create([
             'name' => 'Admin Tour Base',
